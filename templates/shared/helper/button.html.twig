@@ -4,7 +4,7 @@
     {% set params = {
         attr: null,
         class: null,
-        text: "Button",
+        text: 'Button',
         disabled: false,
         dropdown: false,
         icon: null,
@@ -62,7 +62,7 @@
         class: null,
     }|merge(params) %}
 
-    {% set new_params = { text: 'Delete' }|merge(params)|merge({ class: 'btn-ghost-danger ' ~ params.class }) %}
+    {% set new_params = { text: 'sylius.ui.delete'|trans }|merge(params)|merge({ class: 'btn-ghost-danger ' ~ params.class }) %}
     {{ _self.default( new_params) }}
 {% endmacro %}
 

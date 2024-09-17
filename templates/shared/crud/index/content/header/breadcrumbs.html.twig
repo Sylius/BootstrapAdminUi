@@ -12,6 +12,6 @@
 {% set dashboard_path = hookable_metadata.context.routing.dashboard_path|default('/admin') %}
 
 {{ breadcrumbs([
-    { 'name': 'Dashboard', 'url': dashboard_path, 'active': false },
+    { 'name': 'sylius.ui.dashboard', 'url': dashboard_path, 'active': false },
     { 'name': title, 'active': true },
 ]) }}

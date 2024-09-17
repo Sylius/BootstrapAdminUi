@@ -1,6 +1,6 @@
 {% import '@SyliusBootstrapAdminUi/shared/helper/header.html.twig' as header %}
 
-{% if hookable_metadata.context.has("metadata") %}
+{% if hookable_metadata.context.has('metadata') %}
     {% set metadata = hookable_metadata.context.metadata %}
     {% set header = hookable_metadata.configuration.title|default(metadata.applicationName~'.ui.'~metadata.pluralName) %}
 {% else %}
