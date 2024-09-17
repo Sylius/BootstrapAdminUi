@@ -1,5 +1,5 @@
 {
-    "name": "sylius/admin-theme",
+    "name": "sylius/bootstrap-admin-ui",
     "type": "library",
     "autoload": {
         "psr-4": {
