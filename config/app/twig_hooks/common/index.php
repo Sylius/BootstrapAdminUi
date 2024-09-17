@@ -20,6 +20,30 @@ return static function (ContainerConfigurator $container): void {
                 'sidebar' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/sidebar.html.twig',
                 ],
+                'content' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content.html.twig',
+                ],
+            ],
+            'sylius_admin.common.index.content' => [
+                'header' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header.html.twig',
+                ],
+            ],
+            'sylius_admin.common.index.content.header' => [
+                'breadcrumbs' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/header/breadcrumbs.html.twig',
+                ],
+                'title_block' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block.html.twig',
+                ],
+            ],
+            'sylius_admin.common.index.content.header.title_block' => [
+                'title' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block/title.html.twig',
+                ],
+                'actions' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block/actions.html.twig',
+                ],
             ],
         ],
     ]);

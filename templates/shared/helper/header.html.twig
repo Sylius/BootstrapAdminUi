@@ -1,0 +1,9 @@
+{% macro default(level, header, icon, subheader) %}
+    <h{{ level}} class="page-title">
+        {{ header }}
+    </h{{ level }}>
+{% endmacro %}
+
+{% macro h1(header, icon, subheader) %}
+    {{ _self.default(1, header, icon, subheader) }}
+{% endmacro %}
