@@ -18,6 +18,11 @@ return static function (ContainerConfigurator $container): void {
         'templates' => [
             'action' => [
                 'create' => '@SyliusBootstrapAdminUi/shared/grid/action/create.html.twig',
+                'delete' => '@SyliusBootstrapAdminUi/shared/grid/action/delete.html.twig',
+                'update' => '@SyliusBootstrapAdminUi/shared/grid/action/update.html.twig',
+            ],
+            'bulk_action' => [
+                'delete' => '@SyliusBootstrapAdminUi/shared/grid/bulk_action/delete.html.twig',
             ],
         ],
     ]);

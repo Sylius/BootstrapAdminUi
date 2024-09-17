@@ -28,6 +28,9 @@ return static function (ContainerConfigurator $container): void {
                 'header' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header.html.twig',
                 ],
+                'grid' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid.html.twig',
+                ],
             ],
             'sylius_admin.common.index.content.header' => [
                 'breadcrumbs' => [
@@ -43,6 +46,11 @@ return static function (ContainerConfigurator $container): void {
                 ],
                 'actions' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block/actions.html.twig',
+                ],
+            ],
+            'sylius_admin.common.index.content.grid' => [
+                'data_table' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/data_table.html.twig',
                 ],
             ],
         ],
