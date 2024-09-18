@@ -52,6 +52,23 @@ return static function (ContainerConfigurator $container): void {
                 'data_table' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/data_table.html.twig',
                 ],
+                'no_data_block' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/no_results.html.twig',
+                ],
+            ],
+            'sylius_admin.common.index.content.grid.no_results' => [
+                'image' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/no_results/image.html.twig',
+                ],
+                'title' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/no_results/title.html.twig',
+                ],
+                'subtitle' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/no_results/subtitle.html.twig',
+                ],
+                'action' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/no_results/action.html.twig',
+                ],
             ],
         ],
     ]);
