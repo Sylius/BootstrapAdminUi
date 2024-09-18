@@ -17,6 +17,7 @@ body {
     --bs-body-color: #{$body-color};
 }
 
-@import "body";
-
+@import "datatable";
 @import "sidebar";
+
+@import "body";
