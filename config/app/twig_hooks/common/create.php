@@ -25,6 +25,9 @@ return static function (ContainerConfigurator $container): void {
                 ],
             ],
             'sylius_admin.common.create.content' => [
+                'flashes' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/flashes.html.twig',
+                ],
                 'header' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header.html.twig',
                 ],
