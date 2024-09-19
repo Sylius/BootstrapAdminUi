@@ -24,6 +24,7 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content.html.twig',
                 ],
             ],
+
             'sylius_admin.common.index.content' => [
                 'flashes' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/flashes.html.twig',
@@ -35,6 +36,7 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid.html.twig',
                 ],
             ],
+
             'sylius_admin.common.index.content.header' => [
                 'breadcrumbs' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/header/breadcrumbs.html.twig',
@@ -43,6 +45,7 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block.html.twig',
                 ],
             ],
+
             'sylius_admin.common.index.content.header.title_block' => [
                 'title' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block/title.html.twig',
@@ -51,7 +54,11 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block/actions.html.twig',
                 ],
             ],
+
             'sylius_admin.common.index.content.grid' => [
+                'filters' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/filters.html.twig',
+                ],
                 'data_table' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/data_table.html.twig',
                 ],
@@ -59,6 +66,7 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/no_results.html.twig',
                 ],
             ],
+
             'sylius_admin.common.index.content.grid.no_results' => [
                 'image' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/index/content/grid/no_results/image.html.twig',

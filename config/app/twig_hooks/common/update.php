@@ -24,6 +24,7 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content.html.twig',
                 ],
             ],
+
             'sylius_admin.common.update.content' => [
                 'flashes' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/flashes.html.twig',
@@ -38,6 +39,7 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/form.html.twig',
                 ],
             ],
+
             'sylius_admin.common.update.content.header' => [
                 'breadcrumbs' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/update/content/header/breadcrumbs.html.twig',
@@ -46,6 +48,7 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block.html.twig',
                 ],
             ],
+
             'sylius_admin.common.update.content.header.title_block' => [
                 'title' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/update/content/header/title_block/title.html.twig',
@@ -54,6 +57,7 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/update/content/header/title_block/actions.html.twig',
                 ],
             ],
+
             'sylius_admin.common.update.content.header.title_block.actions' => [
                 'cancel' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block/actions/cancel.html.twig',
@@ -64,16 +68,19 @@ return static function (ContainerConfigurator $container): void {
                     'priority' => -300,
                 ],
             ],
+
             'sylius_admin.common.update.content.form' => [
                 'sections' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/form/sections.html.twig',
                 ],
             ],
+
             'sylius_admin.common.update.content.form.sections' => [
                 'general' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/form/sections/general.html.twig',
                 ],
             ],
+
             'sylius_admin.common.update.content.form.sections.general' => [
                 'default' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/form/sections/general/default.html.twig',
