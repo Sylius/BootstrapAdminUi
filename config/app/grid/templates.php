@@ -24,6 +24,9 @@ return static function (ContainerConfigurator $container): void {
             'bulk_action' => [
                 'delete' => '@SyliusBootstrapAdminUi/shared/grid/bulk_action/delete.html.twig',
             ],
+            'filter' => [
+                'string' => '@SyliusBootstrapAdminUi/shared/grid/filter/string.html.twig',
+            ],
         ],
     ]);
 };
