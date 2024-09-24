@@ -12,10 +12,16 @@
 declare(strict_types=1);
 
 return [
+    Doctrine\Bundle\DoctrineBundle\DoctrineBundle::class => ['all' => true],
     Symfony\Bundle\FrameworkBundle\FrameworkBundle::class => ['all' => true],
     Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
     Symfony\UX\TwigComponent\TwigComponentBundle::class => ['all' => true],
     Sylius\TwigHooks\TwigHooksBundle::class => ['all' => true],
-    Sylius\AdminUi\Symfony\SyliusAdminUiBundle::class => ['all' => true],
     Sylius\BootstrapAdminUi\Symfony\SyliusBootstrapAdminUiBundle::class => ['all' => true],
+    Sylius\Bundle\GridBundle\SyliusGridBundle::class => ['all' => true],
+    Sylius\Bundle\ResourceBundle\SyliusResourceBundle::class => ['all' => true],
+    Sylius\TwigExtra\Symfony\SyliusTwigExtraBundle::class => ['all' => true],
+    Knp\Bundle\MenuBundle\KnpMenuBundle::class => ['all' => true],
+    BabDev\PagerfantaBundle\BabDevPagerfantaBundle::class => ['all' => true],
+    Sylius\AdminUi\Symfony\SyliusAdminUiBundle::class => ['all' => true],
 ];
