@@ -14,14 +14,18 @@
 {% set field_name = hookable_metadata.configuration.rendered_field|default('') %}
 {% set rendered_field = rendered_field_prefix ~ (attribute(resource, field_name) is defined ? attribute(resource, field_name) : null) %}
 
-{% set resource_edit_name = rendered_field|default(resource.translations[app.locale].name|default(resource.code|default(resource.id))) %}
-{% set show_route_name = configuration.vars.index.route.name|default(configuration.getRouteName('show')) %}
+{% set action = hookable_metadata.configuration.action|default(false)
+    ? { name: hookable_metadata.configuration.action, active: false }
+    : {}
+%}
 
-{% if sylius_route_exists(show_route_name) %}
-    {% set show_url = path(show_route_name, { id: resource.id }) %}
-    {% set resource_edit = { name: resource_edit_name, url: show_url} %}
+{% set resource_show_name = rendered_field|default(resource.translations[app.locale].name|default(resource.code|default(resource.id))) %}
+
+{% if action is defined and action.name is defined %}
+    {% set show_url = path(configuration.getRouteName('show'), { id: resource.id }) %}
+    {% set resource_show = { name: resource_show_name, url: show_url} %}
 {% else %}
-    {% set resource_edit = { name: resource_edit_name, active: true} %}
+    {% set resource_show = { name: resource_show_name, active: true} %}
 {% endif %}
 
 {% set dashboard_path = hookable_metadata.context.routing.dashboard_path|default('/admin') %}
@@ -29,6 +33,6 @@
 {{ breadcrumbs([
     { name: 'sylius.ui.dashboard', url: dashboard_path, active: false },
     { name: resource_index, url: index_url, active: false },
-    resource_edit,
-    { name: 'sylius.ui.edit'|trans, active: false }
+    resource_show,
+    action
 ]) }}
