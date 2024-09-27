@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
 return static function (ContainerConfigurator $container): void {
-    $container->extension('twig_hooks', [
+    $container->extension('sylius_twig_hooks', [
         'hooks' => [
             'sylius_admin.base#stylesheets' => [
                 'styles' => [

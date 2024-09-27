@@ -37,7 +37,7 @@ final class SyliusBootstrapAdminUiBundle extends AbstractBundle
             return;
         }
 
-        $container->extension('twig_hooks', [
+        $container->extension('sylius_twig_hooks', [
             'enable_autoprefixing' => true,
             'hook_name_section_separator' => '#',
         ]);
