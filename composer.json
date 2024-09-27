@@ -8,7 +8,7 @@
         "sylius/grid-bundle": "^1.13@alpha",
         "sylius/resource-bundle": "^1.11 || ^1.12@alpha",
         "sylius/twig-extra": "dev-main",
-        "sylius/twig-hooks": "^0.3",
+        "sylius/twig-hooks": "^0.3 || dev-main",
         "symfony/asset": "^6.4 || ^7.0",
         "symfony/http-kernel": "^6.4 || ^7.0",
         "symfony/ux-live-component": "^2.17"
