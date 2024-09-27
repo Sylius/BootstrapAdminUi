@@ -32,6 +32,7 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "Sylius\\TwigHooks\\": "../TwigHooks/src/",
             "TestApplication\\Sylius\\BootstrapAdminUi\\": "tests/Functional/.application/src/",
             "Tests\\Sylius\\BootstrapAdminUi\\": "tests/"
         }
