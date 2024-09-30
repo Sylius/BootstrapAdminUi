@@ -15,4 +15,11 @@ import * as bootstrap from 'bootstrap';
     });
 })();
 
+// Initialize tooltips
+(() => {
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((tooltipTriggerEl) => {
+        let tooltip = new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+})();
+
 window.bootstrap = bootstrap;
