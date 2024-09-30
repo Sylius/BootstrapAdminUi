@@ -26,6 +26,7 @@ return static function (ContainerConfigurator $container): void {
                 'delete' => '@SyliusBootstrapAdminUi/shared/grid/bulk_action/delete.html.twig',
             ],
             'filter' => [
+                'entity' => '@SyliusBootstrapAdminUi/shared/grid/filter/entity.html.twig',
                 'string' => '@SyliusBootstrapAdminUi/shared/grid/filter/string.html.twig',
             ],
         ],
