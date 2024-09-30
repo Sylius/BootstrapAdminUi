@@ -1,5 +1,6 @@
 var Encore = require('@symfony/webpack-encore');
 const WebpackRTLPlugin = require('webpack-rtl-plugin');
+const path = require("path");
 
 Encore
   .setOutputPath('./public/')
@@ -28,5 +29,8 @@ Encore
   .addEntry('app', './assets/entrypoint.js')
   .enableSassLoader()
   .autoProvidejQuery()
+  .enableStimulusBridge(
+    path.resolve(__dirname, 'assets/controllers.json')
+  )
 
 module.exports = Encore.getWebpackConfig();
