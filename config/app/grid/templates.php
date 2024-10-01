@@ -28,6 +28,7 @@ return static function (ContainerConfigurator $container): void {
             'filter' => [
                 'date' => '@SyliusBootstrapAdminUi/shared/grid/filter/date.html.twig',
                 'entity' => '@SyliusBootstrapAdminUi/shared/grid/filter/entity.html.twig',
+                'select' => '@SyliusBootstrapAdminUi/shared/grid/filter/select.html.twig',
                 'string' => '@SyliusBootstrapAdminUi/shared/grid/filter/string.html.twig',
             ],
         ],
