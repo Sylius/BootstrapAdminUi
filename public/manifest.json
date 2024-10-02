@@ -15,6 +15,7 @@
   "bundles/SyliusBootstrapAdminUi/fonts/fa-brands-400.woff2": "./fonts/fa-brands-400.d878b0a6a1144760244ff0665888404c.woff2",
   "bundles/SyliusBootstrapAdminUi/fonts/fa-regular-400.eot": "./fonts/fa-regular-400.77206a6bb316fa0aded5083cc57f92b9.eot",
   "bundles/SyliusBootstrapAdminUi/fonts/fa-regular-400.ttf": "./fonts/fa-regular-400.491974d108fe4002b2aaf7ffc48249a0.ttf",
+  "bundles/SyliusBootstrapAdminUi/images/sylius-logo-dark-text.png": "./images/sylius-logo-dark-text.png",
   "bundles/SyliusBootstrapAdminUi/fonts/fa-regular-400.woff": "./fonts/fa-regular-400.bb58e57c48a3e911f15fa834ff00d44a.woff",
   "bundles/SyliusBootstrapAdminUi/fonts/fa-regular-400.woff2": "./fonts/fa-regular-400.7a3337626410ca2f40718481c755640f.woff2",
   "bundles/SyliusBootstrapAdminUi/images/no_data.svg": "./images/no_data.svg",
