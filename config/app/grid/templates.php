@@ -29,6 +29,7 @@ return static function (ContainerConfigurator $container): void {
                 'boolean' => '@SyliusBootstrapAdminUi/shared/grid/filter/boolean.html.twig',
                 'date' => '@SyliusBootstrapAdminUi/shared/grid/filter/date.html.twig',
                 'entity' => '@SyliusBootstrapAdminUi/shared/grid/filter/entity.html.twig',
+                'exists' => '@SyliusBootstrapAdminUi/shared/grid/filter/exists.html.twig',
                 'select' => '@SyliusBootstrapAdminUi/shared/grid/filter/select.html.twig',
                 'string' => '@SyliusBootstrapAdminUi/shared/grid/filter/string.html.twig',
             ],
