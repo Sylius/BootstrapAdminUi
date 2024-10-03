@@ -54,6 +54,9 @@
     "extra": {
         "symfony": {
             "require": "7.1.*"
+        },
+        "branch-alias": {
+            "dev-master": "0.4-dev"
         }
     },
     "minimum-stability": "dev",
