@@ -59,9 +59,9 @@ return static function (ContainerConfigurator $container): void {
             ],
 
             'sylius_admin.common.create.content.header.title_block.actions' => [
-//                'cancel' => [
-//                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block/actions/cancel.html.twig',
-//                ],
+                'cancel' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block/actions/cancel.html.twig',
+                ],
                 'create' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/content/header/title_block/actions/create.html.twig',
                 ],
