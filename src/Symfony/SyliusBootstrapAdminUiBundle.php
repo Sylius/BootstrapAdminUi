@@ -13,8 +13,10 @@ declare(strict_types=1);
 
 namespace Sylius\BootstrapAdminUi\Symfony;
 
+use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
 final class SyliusBootstrapAdminUiBundle extends AbstractBundle
@@ -32,6 +34,13 @@ final class SyliusBootstrapAdminUiBundle extends AbstractBundle
     public function prependExtension(ContainerConfigurator $container, ContainerBuilder $builder): void
     {
         $bundles = $builder->getParameter('kernel.bundles');
+
+        $loader = new PhpFileLoader(
+            $builder,
+            new FileLocator(dirname(__DIR__, 2) . '/config'),
+        );
+
+        $loader->load('services.php');
 
         if (!isset($bundles['SyliusAdminUiBundle'])) {
             return;
