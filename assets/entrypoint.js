@@ -13,5 +13,6 @@ import './app';
 
 import './scripts/bulk-delete';
 import './scripts/check-all';
+import './scripts/menu-search';
 
 import './scripts/bootstrap';
