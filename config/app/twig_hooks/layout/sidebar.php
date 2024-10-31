@@ -24,6 +24,12 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/sidebar/menu.html.twig',
                 ],
             ],
+
+            'sylius_admin.common.component.sidebar.logo' => [
+                'image' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/sidebar/logo/image.html.twig',
+                ],
+            ],
         ],
     ]);
 };
