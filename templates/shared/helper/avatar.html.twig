@@ -1,9 +1,7 @@
 {% macro default(img, class) %}
-    {% from '@SyliusBootstrapAdminUi/shared/helper/icon.html.twig' import icon %}
-
     <span class="sylius avatar {{ class }}" {% if img %} style="background-image: url({{ img }})" {% endif %}>
         {% if img is not defined or img is empty %}
-            {{ icon({ icon: 'user' }) }}
+            {{ ux_icon('tabler:user') }}
         {% endif %}
     </span>
 {% endmacro %}
