@@ -25,6 +25,12 @@ return static function (ContainerConfigurator $container): void {
                 ],
             ],
 
+            'sylius_admin.security.login.logo' => [
+                'image' => [
+                    'template' => '@SyliusBootstrapAdminUi/security/common/logo/image.html.twig',
+                ],
+            ],
+
             'sylius_admin.security.login.content' => [
                 'header' => [
                     'template' => '@SyliusBootstrapAdminUi/security/common/content/header.html.twig',
