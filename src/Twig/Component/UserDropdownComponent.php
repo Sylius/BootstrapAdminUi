@@ -45,7 +45,7 @@ class UserDropdownComponent
             [
                 'title' => 'sylius.ui.logout',
                 'url' => $this->routing['logout_path'] ?? $this->router->generate('sylius_admin_ui_logout'),
-                'icon' => 'logout',
+                'icon' => 'tabler:logout',
             ],
         ];
     }
