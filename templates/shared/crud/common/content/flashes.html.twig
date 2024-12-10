@@ -12,10 +12,10 @@
         {% for type in ['success', 'error', 'info', 'warning'] %}
             {% for flash in session.flashbag.get(type) %}
                 <div
-                        class="sylius alert alert-{{ type == 'error' ? 'danger' : type }}"
-                        role="alert"
-                        {{ sylius_test_html_attribute('sylius-flash-message') }}
-                        {{ sylius_test_html_attribute('sylius-flash-message-type', type) }}
+                    class="sylius alert alert-{{ type == 'error' ? 'danger' : type }}"
+                    role="alert"
+                    {{ sylius_test_html_attribute('sylius-flash-message') }}
+                    {{ sylius_test_html_attribute('sylius-flash-message-type', type) }}
                 >
                     <div class="d-flex justify-content-between">
                         <div class="d-flex">
