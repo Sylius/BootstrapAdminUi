@@ -40,6 +40,13 @@
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
+ */.alert .close{cursor:pointer}/*!
+ * This file is part of the Sylius package.
+ *
+ * (c) Sylius Sp. z o.o.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */textarea.form-control{height:12rem;min-height:8rem}.accordion-item:has(.accordion-error),.list-group-item.active:has(.tab-error),.list-group-item:has(.tab-error){border-left:2px solid #ff0017}.form-select:disabled{color:var(--tblr-gray-600)}.input-group{box-shadow:none}.input-group .form-check{flex-grow:1}.input-group .input-group-text{color:var(--tblr-gray-600)}.form-control:focus{box-shadow:none}/*!
  * This file is part of the Sylius package.
  *
