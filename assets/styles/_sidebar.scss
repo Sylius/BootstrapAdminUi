@@ -19,7 +19,7 @@
             font-weight: 500;
 
             &:active {
-               transform: translateY(1px);
+                transform: translateY(1px);
             }
         }
 
@@ -30,9 +30,10 @@
                 padding-top: 0.3rem;
                 padding-bottom: 0.3rem;
                 background: transparent;
+                color: $gray-500;
 
                 &.active {
-                    color: var(--tblr-white);
+                    color: $primary;
                 }
 
                 &:active {
