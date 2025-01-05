@@ -20,6 +20,9 @@ return static function (ContainerConfigurator $container): void {
                 'logo' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/sidebar/logo.html.twig',
                 ],
+                'toggle_button' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/sidebar/toggle_button.html.twig',
+                ],
                 'menu' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/sidebar/menu.html.twig',
                 ],
