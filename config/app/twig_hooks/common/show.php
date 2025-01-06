@@ -16,6 +16,21 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 return static function (ContainerConfigurator $container): void {
     $container->extension('sylius_twig_hooks', [
         'hooks' => [
+            'sylius_admin.common.show#title' => [
+                'current' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/title/current.html.twig',
+                    'priority' => 200,
+                ],
+                'separator' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/title/separator.html.twig',
+                    'priority' => 100,
+                ],
+                'parent' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/crud/common/title/parent.html.twig',
+                    'priority' => 0,
+                ],
+            ],
+
             'sylius_admin.common.show' => [
                 'sidebar' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/crud/common/sidebar.html.twig',

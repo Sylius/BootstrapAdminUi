@@ -16,6 +16,11 @@ namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 return static function (ContainerConfigurator $container): void {
     $container->extension('sylius_twig_hooks', [
         'hooks' => [
+            'sylius_admin.base#base_title' => [
+                'default' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/layout/title.html.twig',
+                ],
+            ],
             'sylius_admin.base#stylesheets' => [
                 'styles' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/layout/stylesheets.html.twig',
