@@ -22,6 +22,6 @@ class BookItemProvider implements ProviderInterface
 {
     public function provide(Operation $operation, Context $context): BookResource
     {
-        return new BookResource('shinning', 'Shinning');
+        return new BookResource('the-shining', 'The Shining');
     }
 }

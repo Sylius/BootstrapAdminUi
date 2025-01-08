@@ -25,7 +25,7 @@ class BookGridProvider implements DataProviderInterface
     public function getData(Grid $grid, Parameters $parameters): Pagerfanta
     {
         return new Pagerfanta(new ArrayAdapter([
-            new BookResource('shinning', 'Shinning'),
+            new BookResource('the-shining', 'The Shining'),
             new BookResource('carrie', 'Carrie'),
         ]));
     }
