@@ -31,7 +31,7 @@ final class TemplatesTest extends WebTestCase
 
         self::assertResponseIsSuccessful();
         self::assertSelectorTextContains('title', 'app.ui.books | Sylius');
-        self::assertSelectorTextContains('tr.item:first-child[data-test-resource-id]', 'Shinning');
+        self::assertSelectorTextContains('tr.item:first-child[data-test-resource-id]', 'The Shining');
         self::assertSelectorTextContains('tr.item:last-child[data-test-resource-id]', 'Carrie');
     }
 }
