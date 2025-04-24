@@ -8,6 +8,15 @@
       "js": [
         "./app.js"
       ]
+    },
+    "symfony_ux": {
+      "css": [
+        "./symfony_ux.css",
+        "./symfony_ux.rtl.css"
+      ],
+      "js": [
+        "./symfony_ux.js"
+      ]
     }
   }
 }
