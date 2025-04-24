@@ -21,14 +21,22 @@ return static function (ContainerConfigurator $container): void {
                     'template' => '@SyliusBootstrapAdminUi/shared/layout/title.html.twig',
                 ],
             ],
+
             'sylius_admin.base#stylesheets' => [
                 'styles' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/layout/stylesheets.html.twig',
                 ],
+                'symfony_ux' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/layout/symfony_ux_styles.html.twig',
+                ],
             ],
+
             'sylius_admin.base#javascripts' => [
                 'javascripts' => [
                     'template' => '@SyliusBootstrapAdminUi/shared/layout/javascripts.html.twig',
+                ],
+                'symfony_ux' => [
+                    'template' => '@SyliusBootstrapAdminUi/shared/layout/symfony_ux_scripts.html.twig',
                 ],
             ],
         ],
