@@ -1,6 +1,8 @@
 {
   "bundles/SyliusBootstrapAdminUi/app.css": "./app.css",
   "bundles/SyliusBootstrapAdminUi/app.js": "./app.js",
+  "bundles/SyliusBootstrapAdminUi/symfony_ux.css": "./symfony_ux.css",
+  "bundles/SyliusBootstrapAdminUi/symfony_ux.js": "./symfony_ux.js",
   "bundles/SyliusBootstrapAdminUi/fonts/fa-solid-900.svg": "./fonts/fa-solid-900.7a8b4f130182d19a2d7c67d80c090397.svg",
   "bundles/SyliusBootstrapAdminUi/fonts/Inter-VariableFont_slnt,wght.ttf": "./fonts/Inter-VariableFont_slnt,wght.853e0197.ttf",
   "bundles/SyliusBootstrapAdminUi/fonts/fa-brands-400.svg": "./fonts/fa-brands-400.2f517e09eb2ca6650ff5bec5a95157ab.svg",

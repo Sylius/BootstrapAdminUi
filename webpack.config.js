@@ -27,6 +27,7 @@ Encore
   .addPlugin(new WebpackRTLPlugin())
 
   .addEntry('app', './assets/entrypoint.js')
+  .addEntry('symfony_ux', './assets/symfony_ux.js')
   .enableSassLoader()
   .autoProvidejQuery()
   .enableStimulusBridge(
