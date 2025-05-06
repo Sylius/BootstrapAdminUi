@@ -29,7 +29,7 @@
                 {% if params.disabled %}aria-disabled="true"{% endif %}
                 {% if params.dropdown %}data-bs-toggle="dropdown"{% endif %}
                 {{ params.attr is iterable ? block('attributes') : (params.attr ? ' ' ~ params.attr) }}>
-            {{ params.icon ? ux_icon(params.icon, {'class': params.icon_class|default('') }) }}
+            {{ params.icon ? ux_icon(params.icon, {'class': params.icon_class|default('icon') }) }}
             {{ not params.icon_only ? params.text }}
         </a>
     {% else %}
@@ -40,7 +40,7 @@
                 {% if params.disabled %}disabled{% endif %}
                 {% if params.dropdown %}data-bs-toggle="dropdown"{% endif %}
                 {{ params.attr is iterable ? block('attributes') : (params.attr ? ' ' ~ params.attr) }}>
-            {{ params.icon ? ux_icon(params.icon, {'class': params.icon_class|default('') }) }}
+            {{ params.icon ? ux_icon(params.icon, {'class': params.icon_class|default('icon') }) }}
             {{ not params.icon_only ? params.text }}
         </button>
     {% endif %}
