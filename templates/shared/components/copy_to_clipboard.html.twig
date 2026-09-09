@@ -1,0 +1,44 @@
+{% props
+    value,
+    copy_label = 'sylius.ui.copy_to_clipboard',
+    copied_label = 'sylius.ui.copied_to_clipboard',
+    error_label = 'sylius.ui.unable_to_copy_to_clipboard'
+%}
+
+<span {{ stimulus_controller('copy-to-clipboard', {
+    value: value,
+    copiedLabel: copied_label|trans,
+    errorLabel: error_label|trans,
+}) }}>
+    <button
+        {{ attributes
+            .defaults(stimulus_action('copy-to-clipboard', 'copy'))
+            .defaults({
+                type: 'button',
+                class: 'btn btn-icon btn-sm btn-ghost-secondary',
+                'aria-label': copy_label|trans,
+                'data-bs-toggle': 'tooltip',
+                'data-bs-title': copy_label|trans,
+            })
+        }}
+        {{ sylius_test_html_attribute('copy-to-clipboard') }}
+    >
+        {{ ux_icon('tabler:copy', {
+            class: 'icon',
+            'aria-hidden': 'true',
+            'data-copy-to-clipboard-target': 'copyIcon',
+        }) }}
+        {{ ux_icon('tabler:check', {
+            class: 'icon d-none text-success',
+            'aria-hidden': 'true',
+            'data-copy-to-clipboard-target': 'successIcon',
+        }) }}
+        {{ ux_icon('tabler:alert-circle', {
+            class: 'icon d-none text-danger',
+            'aria-hidden': 'true',
+            'data-copy-to-clipboard-target': 'errorIcon',
+        }) }}
+    </button>
+
+    <span class="visually-hidden" aria-live="polite" data-copy-to-clipboard-target="status"></span>
+</span>
