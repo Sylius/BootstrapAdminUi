@@ -46,6 +46,7 @@ final class CopyToClipboardComponentTest extends KernelTestCase
 
         $button = $controller->filter('button[data-test-copy-to-clipboard]');
         self::assertCount(1, $button);
+        self::assertCount(1, $button->filter('.copy-to-clipboard-button'));
         self::assertSame('button', $button->attr('type'));
         self::assertSame('copy-to-clipboard#copy', $button->attr('data-action'));
         self::assertSame('sylius.ui.copy_to_clipboard', $button->attr('aria-label'));
@@ -82,7 +83,7 @@ final class CopyToClipboardComponentTest extends KernelTestCase
             TWIG);
 
         $button = $crawler->filter(
-            'button.btn.btn-icon.btn-sm.btn-ghost-secondary.custom-copy-button[data-test-copy-product-code]',
+            'button.btn.btn-icon.btn-sm.btn-ghost-secondary.copy-to-clipboard-button.custom-copy-button[data-test-copy-product-code]',
         );
 
         self::assertCount(1, $button);

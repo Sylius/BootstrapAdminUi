@@ -25,6 +25,7 @@ final class CopyableComponentTest extends KernelTestCase
 
         self::assertSame('000123', $crawler->filter('.d-inline-flex')->text());
         self::assertCount(1, $crawler->filter('button[data-test-copy-to-clipboard]'));
+        self::assertCount(1, $crawler->filter('button.copy-to-clipboard-button'));
         self::assertSame('000123', $crawler->filter('[data-controller]')->attr('data-copy-to-clipboard-value-value'));
     }
 
@@ -49,6 +50,19 @@ final class CopyableComponentTest extends KernelTestCase
         self::assertSame('mailto:customer@example.com', $crawler->filter('a')->attr('href'));
         self::assertCount(0, $crawler->filter('a button, button a'));
         self::assertSame('customer@example.com', $crawler->filter('[data-controller]')->attr('data-copy-to-clipboard-value-value'));
+    }
+
+    public function testItPreservesDefaultButtonStylesWhenAddingClasses(): void
+    {
+        $crawler = $this->renderComponent(<<<'TWIG'
+            <twig:sylius_bootstrap_admin_ui:copyable value="ABC" button:class="custom-button" />
+            TWIG);
+
+        self::assertCount(
+            1,
+            $crawler->filter('button.btn.btn-icon.btn-sm.btn-ghost-secondary.copy-to-clipboard-button.custom-button'),
+        );
+        self::assertCount(0, $crawler->filter('span.copy-to-clipboard-button, span.custom-button'));
     }
 
     public function testItSeparatesContainerAndButtonAttributes(): void
