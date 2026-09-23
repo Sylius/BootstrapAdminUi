@@ -2,3 +2,8 @@
     min-height: 44px;
     min-width: 44px;
 }
+
+.copy-to-clipboard-button {
+    // Tabler's minimum button dimensions require a length, not the unitless btn-sm line-height.
+    --tblr-btn-line-height: var(--tblr-btn-icon-size);
+}
